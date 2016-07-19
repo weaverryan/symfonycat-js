@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+{% block title %}SSC Checkout{% endblock %}
+
+{% block body %}
+<div class="nav-space-checkout">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="checkout-header">Checkout</h1>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <table class="table table-bordered">
+                    <thead>
+                        <th class="col-xs-6 active">Product</th>
+                        <th class="col-xs-3 active text-center">Price</th>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
+                            <tr>
+                                <th class="col-xs-6 checkout-product-name">{{ product.name }}</th>
+                                <td class="col-xs-3">${{ product.price }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="col-xs-6 info">Total</th>
+                            <td class="col-xs-3 info checkout-total">${{ cart.total }}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <!-- add checkout form here -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

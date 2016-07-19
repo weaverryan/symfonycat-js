@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+<div class="nav-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                {% if error %}
+                    <div class="alert alert-danger">
+                        {{ error.messageKey|trans(error.messageData, 'security') }}
+                    </div>
+                {% endif %}
+
+                <form action="{{ path("fos_user_security_check") }}" method="post">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="_username" class="form-control" id="email" placeholder="Username" value="sleek_sheep1@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <!-- not a password field to keep the tutorial simple -->
+                        <input type="text" name="_password" class="form-control"  id="password" placeholder="Password">
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me!
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

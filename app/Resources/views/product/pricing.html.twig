@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+{% block title %}SSC Pricing{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12"><h2 class="pricing-header text-center uppercase">You'll Look Shearly Amazing</h2></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="price-square">
+            <p class="pricing-length-header monthly text-center">Farmer Brent</p>
+            <div class="pricing-info-padding">
+                <p class="price text-center">$100</p>
+                <p class="text-center">A fresh set of shears monthly along with our beloved after-shear in one of two fragrances!</p>
+            </div>
+            <a class="btn btn-warning center-block price-btn" href="#">Shear Me!</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="price-square price-square-yearly">
+            <p class="pricing-length-header yearly text-center">New Zealander</p>
+            <div class="pricing-info-padding">
+                <p class="price text-center">$200</p>
+                <p class="text-center">The perks of a Farmer Brent membership, but with a fresh bottle of conditioner and a comb each month!</p>
+            </div>
+            <a class="btn btn-warning center-block price-btn" href="#">Get Shearing!</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="pricing-details">
+                <h2 class="pricing-details-header text-center">Which Shear is Right for me?</h2>
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                    <table class="table table-bordered table-striped">
+                        <colgroup>
+                            <col class="col-xs-5">
+                            <col class="col-xs-2">
+                        </colgroup>
+                            <tbody class="pricing-list-table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-xs-6"> </th>
+                                        <th class="col-xs-3 text-center">Farmer Brent</th>
+                                        <th class="col-xs-3 text-center">New Zealander</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th scope="row">
+                                        <p>Fresh Single Blade Shears Monthly</p>
+                                    </th>
+                                    <td class="success"> <i class="glyphicon glyphicon-ok center-text"></i></td>
+                                    <td class="success"> <i class="glyphicon glyphicon-ok"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p>After-Shear</p>
+                                    </th>
+                                    <td class="success"> <i class="glyphicon glyphicon-ok"></i></td>
+                                    <td class="success"> <i class="glyphicon glyphicon-ok"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p>Shearly Conditioned</p>
+                                    </th>
+                                    <td class="danger"> <i class="glyphicon glyphicon-remove danger"></i></td>
+                                    <td class="success"> <i class="glyphicon glyphicon-ok"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p>Post Shear Comb</p>
+                                    </th>
+                                    <td class="danger"> <i class="glyphicon glyphicon-remove"></i></td>
+                                    <td class="success"> <i class="glyphicon glyphicon-ok"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+{% endblock %}

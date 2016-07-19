@@ -1,0 +1,30 @@
+AppBundle\Entity\User:
+    user_{1..10}:
+        username: sleek_sheep<current()>
+        email: sleek_sheep<current()>@example.com
+        plainPassword: breakingbaad
+        enabled: true
+
+AppBundle\Entity\Product:
+    product (template):
+        price: <numberBetween(9, 99)>
+        description: <realText(500, 5)>
+
+    product_1 (extends product):
+        name: Sheer Shears
+        imageFilename: product_1.jpg
+    product_2 (extends product):
+        name: Wool Hauling Basket
+        imageFilename: product_2.jpg
+    product_3 (extends product):
+        name: After-Shear (Fresh Cut Grass)
+        imageFilename: product_3.jpg
+    product_4 (extends product):
+        name: After-Shear (Morning Dew)
+        imageFilename: product_4.jpg
+    product_5 (extends product):
+        name: Shear Comb
+        imageFilename: product_5.jpg
+    product_6 (extends product):
+        name: Shearly Conditioned
+        imageFilename: product_6.png

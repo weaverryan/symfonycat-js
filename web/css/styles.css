@@ -1,0 +1,246 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 160px;
+}
+
+.sheep-flash {
+    margin-top: 50px;
+}
+
+.ssc-logo {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+.hero-space {
+    height: 550px;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 30px;
+    padding-top: 150px;
+}
+
+.hero-space-headline {
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    margin-top:0px;
+    margin-bottom: 40px;
+}
+
+.hero-space-headline, .hero-space-text {
+    color: #fff;
+    text-align: center;
+}
+
+.shear-product {
+    margin-bottom: 35px;
+}
+
+.shear-product-img {
+    margin-bottom: 10px;
+}
+
+.shear-product-title {
+    font-weight: bold;
+}
+
+.shear-product-title, .shear-product-title>span {
+    color: #6d665c;
+}
+
+/*====================
+    PRODUCT SHOW PAGE
+====================*/
+
+.nav-space {
+    margin-top: 150px;
+}
+
+.nav-space-checkout {
+    margin-top: 50px;
+}
+
+.product-show-img {
+    height: 400px;
+}
+
+.product-show-details-container {
+    border: 1px solid #efefee;
+    padding: 20px;
+}
+
+.product-price {
+    background: #efefee;
+    font-size: 1.2em;
+}
+
+.product-description>p {
+    line-height: 1.5em;
+}
+
+/*====================
+    PRICING
+====================*/
+
+.pricing-header {
+    font-size: 3.5em;
+    margin-top: 150px;
+    margin-bottom: 25px;
+    color: #6d665c;
+}
+
+.price-square {
+    border: 1px solid #efefee;
+    min-height: 379px;
+    margin-top:15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom:10px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.price-square-yearly {
+    margin-bottom: 20px;
+}
+
+.pricing-length-header {
+    font-size: 2em;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.monthly {
+    background-color: #89729E;
+}
+
+.yearly {
+    background-color:#4DAF7C;
+}
+
+.alternative {
+    background-color: #BDC3C7;
+}
+
+.indv-text {
+    margin-top: 92px;
+}
+
+.pricing-info-padding {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 3em;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.price-btn {
+    width: 180px;
+    font-size: 1.3em;
+}
+
+.table-bordered>tbody>tr>td {
+    text-align: center;
+}
+
+
+
+
+/*====================
+    CHECKOUT
+====================*/
+
+.checkout-header {
+    margin-bottom: 30px;
+}
+
+.table-margin {
+    margin-top: 50px;
+}
+
+.stripe-text {
+    margin-bottom: 20px;
+}
+
+.checkout-product-name {
+    font-weight: normal;
+}
+
+.checkout-total {
+    font-weight: bold;
+    text-align: center;
+}
+
+.checkout-form .input-group-addon:first-child {
+    min-width: 40px;
+}
+
+/*====================
+    FOOTER
+====================*/
+
+.footer-styling {
+    position: absolute;
+    background-color: #f5f5f5;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.footer p {
+    padding-top: 10px;
+}
+
+.footer ul {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.footer-link {
+    color: #000;
+    display: inline-block;
+}
+
+.footer-link li a {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.footer-link li a:hover{
+    color: #0C5A7E;
+    text-decoration: none;
+}
+
+.footer-link li a:focus{
+    color: #0C5A7E;
+    text-decoration: none;
+}
+
+a>.instagram-text {
+    color: #000;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.instagram {
+    padding-top: 12px;
+    height: 30px;
+    width: auto;
+    float: right;
+}

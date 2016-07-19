@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {# some default markup, in case we haven't properly overridden a template #}
+<div class="product-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {% block fos_user_content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

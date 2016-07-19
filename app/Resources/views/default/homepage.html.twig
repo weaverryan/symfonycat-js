@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="hero-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="hero-space-headline">Artisinal Shearing for the Dapper Sheep</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <h2 class="hero-space-text">Before</h2>
+                <img class="center-block" src="{{ asset('uploads/before.png') }}"/>
+            </div>
+            <div class="col-xs-6">
+                <h2 class="hero-space-text">After</h2>
+                <img class="center-block" src="{{ asset('uploads/after.png') }}"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-xs-4">
+                        <div class="shear-product">
+                            <a href="{{ path('product_show', {slug: product.slug}) }}">
+                                <img class="center-block shear-product-img" height="100" src="{{ asset('uploads/'~product.imageFilename) }}"/>
+                                <p class="text-center shear-product-title">{{ product.name }}
+                                <span>${{ product.price }}</span></p>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
