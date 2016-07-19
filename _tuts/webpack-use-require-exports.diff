@@ -1,0 +1,21 @@
+diff --git a/web/js/ProductCollection.js b/web/js/ProductCollection.js
+index f528edf..b9f999f 100644
+--- a/web/js/ProductCollection.js
++++ b/web/js/ProductCollection.js
+@@ -13,4 +13,4 @@ class ProductCollection
+     }
+ }
+ 
+-export ProductCollection;
+\ No newline at end of file
++module.exports = ProductCollection;
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 707f228..09a5700 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,4 +1,4 @@
+-import ProductCollection from './ProductCollection';
++var ProductCollection = require('./ProductCollection');
+ 
+ var collection = new ProductCollection([
+     'Sheer Shears',

@@ -1,0 +1,14 @@
+diff --git a/webpack.config.js b/webpack.config.js
+new file mode 100644
+index 0000000..bdb9331
+--- /dev/null
++++ b/webpack.config.js
+@@ -0,0 +1,8 @@
++module.exports = {
++    entry: './web/js/productApp.js',
++    output: {
++        path: './web/js',
++        filename: 'compiled.js',
++        publicPath: '/js/'
++    }
++};

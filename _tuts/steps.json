@@ -59,7 +59,27 @@
             "id": "webpack-install-webpack",
             "name": "Webpack: Install webpack",
             "description": null
+        },
+        {
+            "id": "webpack-use-require-exports",
+            "name": "Webpack: Use require\/exports",
+            "description": null
+        },
+        {
+            "id": "webpack-bootstrap-config",
+            "name": "Webpack: Bootstrap config",
+            "description": null
+        },
+        {
+            "id": "webpack-add-babel",
+            "name": "Webpack: Add babel",
+            "description": null
+        },
+        {
+            "id": "webpackdev-install-dev-server",
+            "name": "Webpackdev: Install dev-server",
+            "description": null
         }
     ],
-    "sha": "667588998879586353a4879eed0d0fd57eaa9808"
+    "sha": "35a834d39d60d35df01c998e22933659c545d6ff"
 }

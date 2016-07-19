@@ -1,0 +1,32 @@
+diff --git a/package.json b/package.json
+index 53524d0..dde5025 100644
+--- a/package.json
++++ b/package.json
+@@ -3,6 +3,8 @@
+   "version": "1.0.0",
+   "devDependencies": {
+     "babel-cli": "^6.10.1",
++    "babel-core": "^6.10.4",
++    "babel-loader": "^6.2.4",
+     "babel-preset-es2015": "^6.9.0",
+     "webpack": "^1.13.1"
+   }
+diff --git a/webpack.config.js b/webpack.config.js
+index bdb9331..2e1b39a 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -4,5 +4,14 @@ module.exports = {
+         path: './web/js',
+         filename: 'compiled.js',
+         publicPath: '/js/'
++    },
++    module: {
++        loaders: [
++            {
++                test: /\.js$/,
++                exclude: /node_modules/,
++                loader: "babel-loader"
++            }
++        ]
+     }
+ };
