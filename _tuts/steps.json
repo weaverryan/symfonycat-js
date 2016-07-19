@@ -1,0 +1,65 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "basic-setup-a-boring-js-file",
+            "name": "Basic: Setup a boring JS file",
+            "description": null
+        },
+        {
+            "id": "es2015-let-variable",
+            "name": "ES2015: let variable",
+            "description": null
+        },
+        {
+            "id": "es2015-arrow-function",
+            "name": "ES2015: arrow function",
+            "description": null
+        },
+        {
+            "id": "es2015-classes",
+            "name": "ES2015: Classes",
+            "description": null
+        },
+        {
+            "id": "babel-bootstrap-package-json",
+            "name": "Babel: Bootstrap package.json",
+            "description": null
+        },
+        {
+            "id": "babel-install-babel-cli",
+            "name": "Babel: Install babel-cli",
+            "description": null
+        },
+        {
+            "id": "babel-blank-babelrc",
+            "name": "Babel: Blank .babelrc",
+            "description": null
+        },
+        {
+            "id": "babel-babel-preset-es2015",
+            "name": "Babel: babel-preset-es2015",
+            "description": null
+        },
+        {
+            "id": "import-break-manually-into-2-files",
+            "name": "Import: Break manually into 2 files",
+            "description": null
+        },
+        {
+            "id": "import-use-import-export-does-not-work",
+            "name": "Import: Use import\/export (does not work)",
+            "description": null
+        },
+        {
+            "id": "webpack-install-webpack",
+            "name": "Webpack: Install webpack",
+            "description": null
+        }
+    ],
+    "sha": "667588998879586353a4879eed0d0fd57eaa9808"
+}

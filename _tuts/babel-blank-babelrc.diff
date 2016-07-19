@@ -1,0 +1,10 @@
+diff --git a/.babelrc b/.babelrc
+new file mode 100644
+index 0000000..ab1c311
+--- /dev/null
++++ b/.babelrc
+@@ -0,0 +1,4 @@
++{
++  "presets": [],
++  "plugins": []
++}

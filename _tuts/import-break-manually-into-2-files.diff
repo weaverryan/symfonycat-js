@@ -1,0 +1,56 @@
+diff --git a/web/js/ProductCollection.js b/web/js/ProductCollection.js
+new file mode 100644
+index 0000000..7b3ef84
+--- /dev/null
++++ b/web/js/ProductCollection.js
+@@ -0,0 +1,14 @@
++class ProductCollection
++{
++    constructor(products) {
++        this.products = products;
++    }
++
++    getProducts() {
++        return this.products;
++    }
++
++    getProduct(i) {
++        return this.products[i];
++    }
++}
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 7876290..bafb672 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,18 +1,3 @@
+-class ProductCollection
+-{
+-    constructor(products) {
+-        this.products = products;
+-    }
+-
+-    getProducts() {
+-        return this.products;
+-    }
+-
+-    getProduct(i) {
+-        return this.products[i];
+-    }
+-}
+-
+ var collection = new ProductCollection([
+     'Sheer Shears',
+     'Wool Hauling Basket',
+diff --git a/web/products.html b/web/products.html
+index aee8f15..ae5d1be 100644
+--- a/web/products.html
++++ b/web/products.html
+@@ -7,6 +7,7 @@
+ <body>
+     <h1>Products</h1>
+ 
++    <script src="js/ProductCollection.js"></script>
+     <script src="js/compiled.js"></script>
+ </body>
+ </html>
+\ No newline at end of file

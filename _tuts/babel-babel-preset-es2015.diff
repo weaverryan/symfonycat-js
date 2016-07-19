@@ -1,0 +1,25 @@
+diff --git a/.babelrc b/.babelrc
+index ab1c311..04cee31 100644
+--- a/.babelrc
++++ b/.babelrc
+@@ -1,4 +1,6 @@
+ {
+-  "presets": [],
++  "presets": [
++    "es2015"
++  ],
+   "plugins": []
+ }
+diff --git a/package.json b/package.json
+index c30bdc3..3c3b432 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,7 @@
+   "name": "webpack-tutorial",
+   "version": "1.0.0",
+   "devDependencies": {
+-    "babel-cli": "^6.10.1"
++    "babel-cli": "^6.10.1",
++    "babel-preset-es2015": "^6.9.0"
+   }
+ }

@@ -1,0 +1,12 @@
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 67f0aae..fbfa924 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -13,6 +13,4 @@ var loopThroughProducts = function(callback) {
+     }
+ };
+ 
+-loopThroughProducts(function(product) {
+-    console.log('Product: '+product);
+-});
++loopThroughProducts(product => console.log('Product: '+product));
