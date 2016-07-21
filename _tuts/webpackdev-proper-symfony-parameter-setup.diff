@@ -1,0 +1,52 @@
+diff --git a/app/AppKernel.php b/app/AppKernel.php
+index 0283b19..d140252 100644
+--- a/app/AppKernel.php
++++ b/app/AppKernel.php
+@@ -1,5 +1,6 @@
+ <?php
+ 
++use Symfony\Component\DependencyInjection\ContainerBuilder;
+ use Symfony\Component\HttpKernel\Kernel;
+ use Symfony\Component\Config\Loader\LoaderInterface;
+ 
+@@ -51,5 +52,15 @@ class AppKernel extends Kernel
+     public function registerContainerConfiguration(LoaderInterface $loader)
+     {
+         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
++
++        $loader->load(function(ContainerBuilder $container) {
++            if ($container->getParameter('use_webpack_dev_server')) {
++                $container->loadFromExtension('framework', [
++                    'assets' => [
++                        'base_url' => 'http://localhost:8080'
++                    ]
++                ]);
++            }
++        });
+     }
+ }
+diff --git a/app/config/config.yml b/app/config/config.yml
+index 7aeef90..378d45d 100644
+--- a/app/config/config.yml
++++ b/app/config/config.yml
+@@ -30,8 +30,8 @@ framework:
+         save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+     fragments:       ~
+     http_method_override: true
+-    assets:
+-        base_url: http://localhost:8080
++    # base_url configured dynamically in AppKernel
++    assets: ~
+ 
+ # Twig Configuration
+ twig:
+diff --git a/app/config/parameters.yml.dist b/app/config/parameters.yml.dist
+index 0087ffc..da5e987 100644
+--- a/app/config/parameters.yml.dist
++++ b/app/config/parameters.yml.dist
+@@ -17,3 +17,5 @@ parameters:
+ 
+     # A secret key that's used to generate certain security-related tokens
+     secret:            ThisTokenIsNotSoSecretChangeIt
++
++    use_webpack_dev_server: true

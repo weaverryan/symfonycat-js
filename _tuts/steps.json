@@ -91,6 +91,11 @@
             "description": null
         },
         {
+            "id": "webpackdev-proper-symfony-parameter-setup",
+            "name": "Webpackdev: Proper Symfony parameter setup",
+            "description": null
+        },
+        {
             "id": "css-refactor-to-need-some-css",
             "name": "CSS: Refactor to need some css",
             "description": null
@@ -119,7 +124,12 @@
             "id": "images-use-url-loader",
             "name": "Images: Use url loader",
             "description": null
+        },
+        {
+            "id": "images-cover-all-images",
+            "name": "Images: Cover all images",
+            "description": null
         }
     ],
-    "sha": "a54ee88eace7916359e5d64ab454f6d93564190e"
+    "sha": "0c0f06bb1ed97c73a1100e5ee250c5347ce8f418"
 }
