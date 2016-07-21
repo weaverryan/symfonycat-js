@@ -1,3 +1,15 @@
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index c956439..363d561 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -3,6 +3,7 @@
+ {% block javascripts %}
+     {{ parent() }}
+ 
++    <script src="{{ asset('js/ProductCollection.js') }}"></script>
+     <script src="{{ asset('builds/productApp.js') }}"></script>
+ {% endblock %}
+ 
 diff --git a/web/js/ProductCollection.js b/web/js/ProductCollection.js
 new file mode 100644
 index 0000000..7b3ef84
@@ -41,16 +53,3 @@ index 7876290..bafb672 100644
  var collection = new ProductCollection([
      'Sheer Shears',
      'Wool Hauling Basket',
-diff --git a/web/products.html b/web/products.html
-index aee8f15..ae5d1be 100644
---- a/web/products.html
-+++ b/web/products.html
-@@ -7,6 +7,7 @@
- <body>
-     <h1>Products</h1>
- 
-+    <script src="js/ProductCollection.js"></script>
-     <script src="js/compiled.js"></script>
- </body>
- </html>
-\ No newline at end of file

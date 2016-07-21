@@ -1,12 +1,26 @@
 diff --git a/.gitignore b/.gitignore
-index 93821ad..0654fa2 100644
+index 93821ad..9bc0690 100644
 --- a/.gitignore
 +++ b/.gitignore
-@@ -14,3 +14,4 @@
+@@ -14,3 +14,5 @@
  !var/SymfonyRequirements.php
  /vendor/
  /web/bundles/
 +/node_modules
++/web/builds/
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index 020b61c..c956439 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -3,7 +3,7 @@
+ {% block javascripts %}
+     {{ parent() }}
+ 
+-    <script src="{{ asset('js/productApp.js') }}"></script>
++    <script src="{{ asset('builds/productApp.js') }}"></script>
+ {% endblock %}
+ 
+ {% block body %}
 diff --git a/package.json b/package.json
 index b8a30c9..c30bdc3 100644
 --- a/package.json
@@ -20,16 +34,3 @@ index b8a30c9..c30bdc3 100644
 +    "babel-cli": "^6.10.1"
 +  }
  }
-diff --git a/web/products.html b/web/products.html
-index 1686abb..aee8f15 100644
---- a/web/products.html
-+++ b/web/products.html
-@@ -7,6 +7,6 @@
- <body>
-     <h1>Products</h1>
- 
--    <script src="js/productApp.js"></script>
-+    <script src="js/compiled.js"></script>
- </body>
- </html>
-\ No newline at end of file

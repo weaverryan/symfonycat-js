@@ -1,3 +1,19 @@
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index d65b617..020b61c 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -1,5 +1,11 @@
+ {% extends 'base.html.twig' %}
+ 
++{% block javascripts %}
++    {{ parent() }}
++
++    <script src="{{ asset('js/productApp.js') }}"></script>
++{% endblock %}
++
+ {% block body %}
+ <div class="hero-space">
+     <div class="container">
 diff --git a/web/js/productApp.js b/web/js/productApp.js
 new file mode 100644
 index 0000000..ab635b6
@@ -22,23 +38,4 @@ index 0000000..ab635b6
 +loopThroughProducts(function(product) {
 +    console.log('Product: '+product);
 +});
-\ No newline at end of file
-diff --git a/web/products.html b/web/products.html
-new file mode 100644
-index 0000000..1686abb
---- /dev/null
-+++ b/web/products.html
-@@ -0,0 +1,12 @@
-+<!DOCTYPE html>
-+<html lang="en">
-+<head>
-+    <meta charset="UTF-8">
-+    <title>Products</title>
-+</head>
-+<body>
-+    <h1>Products</h1>
-+
-+    <script src="js/productApp.js"></script>
-+</body>
-+</html>
 \ No newline at end of file

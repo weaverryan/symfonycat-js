@@ -1,0 +1,27 @@
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index d3f1073..6cea4be 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -3,6 +3,7 @@
+ {% block javascripts %}
+     {{ parent() }}
+ 
++    <script src="{{ asset('webpack-dev-server.js') }}"></script>
+     <script src="{{ asset('builds/product.js') }}"></script>
+ {% endblock %}
+ 
+diff --git a/webpack.config.js b/webpack.config.js
+index 872b9fd..c3a1e61 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -15,5 +15,10 @@ module.exports = {
+                 loader: "babel-loader"
+             }
+         ]
++    },
++    devServer: {
++        hot: true,
++        contentBase: './web/',
++        headers: { "Access-Control-Allow-Origin": "*" }
+     }
+ };

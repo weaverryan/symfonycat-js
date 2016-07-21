@@ -12,13 +12,13 @@ index 53524d0..dde5025 100644
      "webpack": "^1.13.1"
    }
 diff --git a/webpack.config.js b/webpack.config.js
-index bdb9331..2e1b39a 100644
+index b9de6de..872b9fd 100644
 --- a/webpack.config.js
 +++ b/webpack.config.js
-@@ -4,5 +4,14 @@ module.exports = {
-         path: './web/js',
-         filename: 'compiled.js',
-         publicPath: '/js/'
+@@ -6,5 +6,14 @@ module.exports = {
+         path: './web/builds',
+         filename: '[name].js',
+         publicPath: '/builds/'
 +    },
 +    module: {
 +        loaders: [

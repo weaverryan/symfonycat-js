@@ -79,7 +79,47 @@
             "id": "webpackdev-install-dev-server",
             "name": "Webpackdev: Install dev-server",
             "description": null
+        },
+        {
+            "id": "webpackdev-add-configuration",
+            "name": "Webpackdev: add configuration",
+            "description": null
+        },
+        {
+            "id": "webpackdev-adding-production-flag",
+            "name": "Webpackdev: adding production flag",
+            "description": null
+        },
+        {
+            "id": "css-refactor-to-need-some-css",
+            "name": "CSS: Refactor to need some css",
+            "description": null
+        },
+        {
+            "id": "css-install-css-loader",
+            "name": "CSS: Install css-loader",
+            "description": null
+        },
+        {
+            "id": "css-install-style-loader",
+            "name": "CSS: Install style-loader",
+            "description": null
+        },
+        {
+            "id": "css-move-loaders-to-config",
+            "name": "CSS: Move loaders to config",
+            "description": null
+        },
+        {
+            "id": "images-try-to-refer-to-an-image",
+            "name": "Images: Try to refer to an image",
+            "description": null
+        },
+        {
+            "id": "images-use-url-loader",
+            "name": "Images: Use url loader",
+            "description": null
         }
     ],
-    "sha": "35a834d39d60d35df01c998e22933659c545d6ff"
+    "sha": "a54ee88eace7916359e5d64ab454f6d93564190e"
 }

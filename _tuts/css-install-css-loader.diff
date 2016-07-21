@@ -1,0 +1,36 @@
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index 849c705..8b060eb 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -2,8 +2,6 @@
+ 
+ {% block stylesheets %}
+     {{ parent() }}
+-
+-    <link rel="stylesheet" href="{{ asset('css/productApp.css') }}">
+ {% endblock %}
+ 
+ {% block javascripts %}
+diff --git a/package.json b/package.json
+index b608488..a80ccf3 100644
+--- a/package.json
++++ b/package.json
+@@ -6,6 +6,7 @@
+     "babel-core": "^6.10.4",
+     "babel-loader": "^6.2.4",
+     "babel-preset-es2015": "^6.9.0",
++    "css-loader": "^0.23.1",
+     "webpack": "^1.13.1",
+     "webpack-dev-server": "^1.14.1"
+   }
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 4a78e93..6af0f22 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,4 +1,6 @@
+ var ProductCollection = require('./ProductCollection');
++var cssData = require('css!../css/productApp.css');
++console.log(cssData);
+ 
+ var collection = new ProductCollection([
+     'Sheer Shears',

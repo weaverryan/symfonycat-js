@@ -1,0 +1,26 @@
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 8125522..d138c1a 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,5 +1,5 @@
+ var ProductCollection = require('./ProductCollection');
+-require('style!css!../css/productApp.css');
++require('../css/productApp.css');
+ 
+ var collection = new ProductCollection([
+     'Sheer Shears',
+diff --git a/webpack.config.js b/webpack.config.js
+index 306cce1..f37bbe1 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -15,6 +15,10 @@ module.exports = {
+                 test: /\.js$/,
+                 exclude: /node_modules/,
+                 loader: "babel-loader"
++            },
++            {
++                test: /\.css$/,
++                loader: "style!css"
+             }
+         ]
+     },

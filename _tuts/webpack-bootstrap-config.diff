@@ -1,14 +1,29 @@
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index c956439..d3f1073 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -3,7 +3,7 @@
+ {% block javascripts %}
+     {{ parent() }}
+ 
+-    <script src="{{ asset('builds/productApp.js') }}"></script>
++    <script src="{{ asset('builds/product.js') }}"></script>
+ {% endblock %}
+ 
+ {% block body %}
 diff --git a/webpack.config.js b/webpack.config.js
 new file mode 100644
-index 0000000..bdb9331
+index 0000000..b9de6de
 --- /dev/null
 +++ b/webpack.config.js
-@@ -0,0 +1,8 @@
+@@ -0,0 +1,10 @@
 +module.exports = {
-+    entry: './web/js/productApp.js',
++    entry: {
++        product: './web/js/productApp.js'
++    },
 +    output: {
-+        path: './web/js',
-+        filename: 'compiled.js',
-+        publicPath: '/js/'
++        path: './web/builds',
++        filename: '[name].js',
++        publicPath: '/builds/'
 +    }
 +};
