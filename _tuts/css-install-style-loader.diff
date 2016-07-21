@@ -11,14 +11,14 @@ index a80ccf3..c9d8c8e 100644
      "webpack-dev-server": "^1.14.1"
    }
 diff --git a/web/js/productApp.js b/web/js/productApp.js
-index 6af0f22..8125522 100644
+index c7480f5..6603008 100644
 --- a/web/js/productApp.js
 +++ b/web/js/productApp.js
 @@ -1,6 +1,5 @@
- var ProductCollection = require('./ProductCollection');
--var cssData = require('css!../css/productApp.css');
+ import ProductCollection from './ProductCollection';
+-import cssData from 'css!../css/productApp.css';
 -console.log(cssData);
-+require('style!css!../css/productApp.css');
++import 'style!css!../css/productApp.css';
  
  var collection = new ProductCollection([
      'Sheer Shears',

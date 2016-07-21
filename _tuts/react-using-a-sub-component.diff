@@ -1,0 +1,43 @@
+diff --git a/web/js/Components/ProductApp.js b/web/js/Components/ProductApp.js
+index fa078eb..9808b37 100644
+--- a/web/js/Components/ProductApp.js
++++ b/web/js/Components/ProductApp.js
+@@ -1,5 +1,6 @@
+ import React from 'react';
+ import _ from 'lodash';
++import ProductRow from './ProductRow';
+ 
+ var ProductApp = React.createClass({
+ 
+@@ -8,10 +9,7 @@ var ProductApp = React.createClass({
+         var productRows = [];
+         _.each(this.props.initialProducts, function(product, index) {
+             productRows.push(
+-                <tr key={index}>
+-                    <td>{product}</td>
+-                    <td className="product-price">{Math.round(Math.random()*50)}</td>
+-                </tr>
++                <ProductRow product={product} key={index} />
+             );
+         });
+ 
+diff --git a/web/js/Components/ProductRow.js b/web/js/Components/ProductRow.js
+new file mode 100644
+index 0000000..810a097
+--- /dev/null
++++ b/web/js/Components/ProductRow.js
+@@ -0,0 +1,14 @@
++import React from 'react';
++
++var ProductRow = React.createClass({
++    render: function() {
++        return (
++            <tr>
++                <td>{this.props.product}</td>
++                <td className="product-price">{Math.round(Math.random()*50)}</td>
++            </tr>
++        )
++    }
++});
++
++module.exports = ProductRow;

@@ -1,0 +1,44 @@
+diff --git a/web/js/Components/ProductApp.js b/web/js/Components/ProductApp.js
+index 9808b37..7b06c6d 100644
+--- a/web/js/Components/ProductApp.js
++++ b/web/js/Components/ProductApp.js
+@@ -4,10 +4,29 @@ import ProductRow from './ProductRow';
+ 
+ var ProductApp = React.createClass({
+ 
++    getInitialState: function() {
++        return {
++            products: this.props.initialProducts
++        }
++    },
++
++    handleProductReload: function(e) {
++        e.preventDefault();
++
++        // in real life, your user might click a button
++        // and then you make an AJAX request and use the
++        // response from that request to update some data
++        // in your state
++        var shuffledProducts = _.shuffle(this.state.products);
++
++        this.setState({
++            products: shuffledProducts
++        });
++    },
+ 
+     render: function() {
+         var productRows = [];
+-        _.each(this.props.initialProducts, function(product, index) {
++        _.each(this.state.products, function(product, index) {
+             productRows.push(
+                 <ProductRow product={product} key={index} />
+             );
+@@ -15,6 +34,8 @@ var ProductApp = React.createClass({
+ 
+         return (
+             <div>
++                <button onClick={this.handleProductReload} className="btn btn-warning pull-right">Shuffle Products</button>
++
+                 <h1>{this.props.message}</h1>
+ 
+                 <table className="table">

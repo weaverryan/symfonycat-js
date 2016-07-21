@@ -11,17 +11,18 @@ index 2d844aa..2d8fe4a 100644
      "url-loader": "^0.5.7",
      "webpack": "^1.13.1",
 diff --git a/web/js/productApp.js b/web/js/productApp.js
-index d138c1a..0d85b0a 100644
+index 4e65467..cfb954c 100644
 --- a/web/js/productApp.js
 +++ b/web/js/productApp.js
-@@ -1,5 +1,6 @@
- var ProductCollection = require('./ProductCollection');
- require('../css/productApp.css');
-+var _ = require('lodash');
+@@ -1,5 +1,7 @@
++
+ import ProductCollection from './ProductCollection';
+ import '../css/productApp.css';
++import _ from 'lodash';
  
  var collection = new ProductCollection([
      'Sheer Shears',
-@@ -11,9 +12,9 @@ var collection = new ProductCollection([
+@@ -11,9 +13,9 @@ var collection = new ProductCollection([
  ]);
  
  var loopThroughProducts = function(callback) {

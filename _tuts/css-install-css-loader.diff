@@ -24,12 +24,12 @@ index b608488..a80ccf3 100644
      "webpack-dev-server": "^1.14.1"
    }
 diff --git a/web/js/productApp.js b/web/js/productApp.js
-index 4a78e93..6af0f22 100644
+index 74eea00..c7480f5 100644
 --- a/web/js/productApp.js
 +++ b/web/js/productApp.js
 @@ -1,4 +1,6 @@
- var ProductCollection = require('./ProductCollection');
-+var cssData = require('css!../css/productApp.css');
+ import ProductCollection from './ProductCollection';
++import cssData from 'css!../css/productApp.css';
 +console.log(cssData);
  
  var collection = new ProductCollection([

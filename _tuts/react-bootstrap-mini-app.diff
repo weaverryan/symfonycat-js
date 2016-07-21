@@ -14,19 +14,20 @@ index 8b060eb..efe5bae 100644
          </div>
      </div>
 diff --git a/web/js/productApp.js b/web/js/productApp.js
-index 0d85b0a..6af0683 100644
+index cfb954c..f71c01c 100644
 --- a/web/js/productApp.js
 +++ b/web/js/productApp.js
-@@ -1,6 +1,8 @@
- var ProductCollection = require('./ProductCollection');
- require('../css/productApp.css');
- var _ = require('lodash');
-+var React = require('react');
-+var ReactDOM = require('react-dom');
+@@ -1,7 +1,8 @@
+-
+ import ProductCollection from './ProductCollection';
+ import '../css/productApp.css';
+ import _ from 'lodash';
++import React from 'react';
++import ReactDOM from 'react-dom';
  
  var collection = new ProductCollection([
      'Sheer Shears',
-@@ -11,19 +13,17 @@ var collection = new ProductCollection([
+@@ -12,19 +13,17 @@ var collection = new ProductCollection([
      'Shearly Conditioned'
  ]);
  

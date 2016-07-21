@@ -1,0 +1,26 @@
+diff --git a/web/js/Components/ProductApp.js b/web/js/Components/ProductApp.js
+index 0a0be89..7ab748c 100644
+--- a/web/js/Components/ProductApp.js
++++ b/web/js/Components/ProductApp.js
+@@ -3,7 +3,7 @@ import React from 'react';
+ var ProductApp = React.createClass({
+     render: function() {
+         return (
+-            <h1>Yay!</h1>
++            <h1>{this.props.message}</h1>
+         )
+     }
+ });
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 9d89cb3..94121bc 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -15,7 +15,7 @@ var collection = new ProductCollection([
+ 
+ $(document).ready(function() {
+     ReactDOM.render(
+-        <ProductApp/>,
++        <ProductApp message="Great Products!" />,
+         document.getElementById('product-app')
+     );
+ });

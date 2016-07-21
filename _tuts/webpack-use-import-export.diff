@@ -1,0 +1,20 @@
+diff --git a/web/js/ProductCollection.js b/web/js/ProductCollection.js
+index b9f999f..761eacb 100644
+--- a/web/js/ProductCollection.js
++++ b/web/js/ProductCollection.js
+@@ -13,4 +13,4 @@ class ProductCollection
+     }
+ }
+ 
+-module.exports = ProductCollection;
++export default ProductCollection;
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 09a5700..707f228 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,4 +1,4 @@
+-var ProductCollection = require('./ProductCollection');
++import ProductCollection from './ProductCollection';
+ 
+ var collection = new ProductCollection([
+     'Sheer Shears',

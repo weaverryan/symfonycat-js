@@ -45,7 +45,7 @@ index 0000000..adcc128
 +    color: green;
 +}
 diff --git a/web/js/productApp.js b/web/js/productApp.js
-index 09a5700..4a78e93 100644
+index 707f228..74eea00 100644
 --- a/web/js/productApp.js
 +++ b/web/js/productApp.js
 @@ -15,4 +15,13 @@ var loopThroughProducts = function(callback) {

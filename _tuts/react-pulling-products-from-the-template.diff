@@ -1,0 +1,42 @@
+diff --git a/app/Resources/views/default/homepage.html.twig b/app/Resources/views/default/homepage.html.twig
+index efe5bae..2a2efad 100644
+--- a/app/Resources/views/default/homepage.html.twig
++++ b/app/Resources/views/default/homepage.html.twig
+@@ -7,6 +7,17 @@
+ {% block javascripts %}
+     {{ parent() }}
+ 
++    <script>
++        window.startingProducts = [
++            'Sheer Shears',
++            'Wool Hauling Basket',
++            'After-Shear (Fresh Cut Grass)',
++            'After-Shear (Morning Dew)',
++            'Shear Comb',
++            'Shearly Conditioned'
++        ];
++    </script>
++
+     <script src="{{ asset('webpack-dev-server.js') }}"></script>
+     <script src="{{ asset('builds/product.js') }}"></script>
+ {% endblock %}
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 0205ee6..a62bb31 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -3,14 +3,7 @@ import React from 'react';
+ import ReactDOM from 'react-dom';
+ import ProductApp  from './Components/ProductApp';
+ 
+-var startingProducts = [
+-    'Sheer Shears',
+-    'Wool Hauling Basket',
+-    'After-Shear (Fresh Cut Grass)',
+-    'After-Shear (Morning Dew)',
+-    'Shear Comb',
+-    'Shearly Conditioned'
+-];
++var startingProducts = window.startingProducts;
+ 
+ $(document).ready(function() {
+     ReactDOM.render(

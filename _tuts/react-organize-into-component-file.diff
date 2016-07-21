@@ -1,10 +1,10 @@
 diff --git a/web/js/Components/ProductApp.js b/web/js/Components/ProductApp.js
 new file mode 100644
-index 0000000..35c5bad
+index 0000000..0a0be89
 --- /dev/null
 +++ b/web/js/Components/ProductApp.js
 @@ -0,0 +1,11 @@
-+var React = require('react');
++import React from 'react';
 +
 +var ProductApp = React.createClass({
 +    render: function() {
@@ -16,16 +16,16 @@ index 0000000..35c5bad
 +
 +module.exports = ProductApp;
 diff --git a/web/js/productApp.js b/web/js/productApp.js
-index 6af0683..6438b6a 100644
+index f71c01c..9d89cb3 100644
 --- a/web/js/productApp.js
 +++ b/web/js/productApp.js
 @@ -1,8 +1,8 @@
- var ProductCollection = require('./ProductCollection');
- require('../css/productApp.css');
--var _ = require('lodash');
- var React = require('react');
- var ReactDOM = require('react-dom');
-+var ProductApp = require('./Components/ProductApp');
+ import ProductCollection from './ProductCollection';
+ import '../css/productApp.css';
+-import _ from 'lodash';
+ import React from 'react';
+ import ReactDOM from 'react-dom';
++import ProductApp  from './Components/ProductApp';
  
  var collection = new ProductCollection([
      'Sheer Shears',

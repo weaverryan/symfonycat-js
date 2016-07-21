@@ -1,0 +1,63 @@
+diff --git a/web/js/Components/ProductApp.js b/web/js/Components/ProductApp.js
+index 7ab748c..fa078eb 100644
+--- a/web/js/Components/ProductApp.js
++++ b/web/js/Components/ProductApp.js
+@@ -1,9 +1,28 @@
+ import React from 'react';
++import _ from 'lodash';
+ 
+ var ProductApp = React.createClass({
++
++
+     render: function() {
++        var productRows = [];
++        _.each(this.props.initialProducts, function(product, index) {
++            productRows.push(
++                <tr key={index}>
++                    <td>{product}</td>
++                    <td className="product-price">{Math.round(Math.random()*50)}</td>
++                </tr>
++            );
++        });
++
+         return (
+-            <h1>{this.props.message}</h1>
++            <div>
++                <h1>{this.props.message}</h1>
++
++                <table className="table">
++                    <tbody>{productRows}</tbody>
++                </table>
++            </div>
+         )
+     }
+ });
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 94121bc..0205ee6 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,21 +1,20 @@
+-import ProductCollection from './ProductCollection';
+ import '../css/productApp.css';
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+ import ProductApp  from './Components/ProductApp';
+ 
+-var collection = new ProductCollection([
++var startingProducts = [
+     'Sheer Shears',
+     'Wool Hauling Basket',
+     'After-Shear (Fresh Cut Grass)',
+     'After-Shear (Morning Dew)',
+     'Shear Comb',
+     'Shearly Conditioned'
+-]);
++];
+ 
+ $(document).ready(function() {
+     ReactDOM.render(
+-        <ProductApp message="Great Products!" />,
++        <ProductApp message="Great Products!" initialProducts={startingProducts} />,
+         document.getElementById('product-app')
+     );
+ });

@@ -76,6 +76,11 @@
             "description": null
         },
         {
+            "id": "webpack-use-import-export",
+            "name": "Webpack: Use import\/export",
+            "description": null
+        },
+        {
             "id": "webpackdev-install-dev-server",
             "name": "Webpackdev: Install dev-server",
             "description": null
@@ -159,7 +164,32 @@
             "id": "react-organize-into-component-file",
             "name": "React: Organize into component file",
             "description": null
+        },
+        {
+            "id": "react-passing-first-prop",
+            "name": "React: Passing first prop",
+            "description": null
+        },
+        {
+            "id": "react-passing-array-prop-render",
+            "name": "React: Passing array prop & render",
+            "description": null
+        },
+        {
+            "id": "react-using-a-sub-component",
+            "name": "React: Using a sub-component",
+            "description": null
+        },
+        {
+            "id": "react-pulling-products-from-the-template",
+            "name": "React: Pulling products from the template",
+            "description": null
+        },
+        {
+            "id": "react-adding-state-with-a-shuffle",
+            "name": "React: Adding state with a shuffle",
+            "description": null
         }
     ],
-    "sha": "4346d5f2b6d5cf1b39bf5dad73cd6e42f277bd64"
+    "sha": "c8703b8a8602dbb1966bcdaef3b67142b2d13dd6"
 }
