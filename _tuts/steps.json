@@ -91,6 +91,11 @@
             "description": null
         },
         {
+            "id": "webpackdev-dev-tools",
+            "name": "Webpackdev: Dev-tools",
+            "description": null
+        },
+        {
             "id": "webpackdev-proper-symfony-parameter-setup",
             "name": "Webpackdev: Proper Symfony parameter setup",
             "description": null
@@ -129,7 +134,32 @@
             "id": "images-cover-all-images",
             "name": "Images: Cover all images",
             "description": null
+        },
+        {
+            "id": "node-js-use-the-lodash-package",
+            "name": "Node.js: Use the lodash package",
+            "description": null
+        },
+        {
+            "id": "react-bootstrap-mini-app",
+            "name": "React: Bootstrap mini-app",
+            "description": null
+        },
+        {
+            "id": "react-add-the-babel-react-preset",
+            "name": "React: Add the babel react preset",
+            "description": null
+        },
+        {
+            "id": "react-install-packages",
+            "name": "React: Install packages",
+            "description": null
+        },
+        {
+            "id": "react-organize-into-component-file",
+            "name": "React: Organize into component file",
+            "description": null
         }
     ],
-    "sha": "0c0f06bb1ed97c73a1100e5ee250c5347ce8f418"
+    "sha": "4346d5f2b6d5cf1b39bf5dad73cd6e42f277bd64"
 }

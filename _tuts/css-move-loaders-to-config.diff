@@ -10,7 +10,7 @@ index 8125522..d138c1a 100644
  var collection = new ProductCollection([
      'Sheer Shears',
 diff --git a/webpack.config.js b/webpack.config.js
-index 306cce1..f37bbe1 100644
+index 367d930..6b410ea 100644
 --- a/webpack.config.js
 +++ b/webpack.config.js
 @@ -15,6 +15,10 @@ module.exports = {

@@ -1,0 +1,25 @@
+diff --git a/.babelrc b/.babelrc
+index 04cee31..77bca68 100644
+--- a/.babelrc
++++ b/.babelrc
+@@ -1,6 +1,7 @@
+ {
+   "presets": [
+-    "es2015"
++    "es2015",
++    "react"
+   ],
+   "plugins": []
+ }
+diff --git a/package.json b/package.json
+index 2d8fe4a..14cfb73 100644
+--- a/package.json
++++ b/package.json
+@@ -6,6 +6,7 @@
+     "babel-core": "^6.10.4",
+     "babel-loader": "^6.2.4",
+     "babel-preset-es2015": "^6.9.0",
++    "babel-preset-react": "^6.11.1",
+     "css-loader": "^0.23.1",
+     "file-loader": "^0.9.0",
+     "lodash": "^4.13.1",

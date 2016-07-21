@@ -1,0 +1,12 @@
+diff --git a/webpack.config.js b/webpack.config.js
+index 306cce1..367d930 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -22,5 +22,6 @@ module.exports = {
+         hot: true,
+         contentBase: './web/',
+         headers: { "Access-Control-Allow-Origin": "*" }
+-    }
++    },
++    devtool: production ? false : '#inline-source-map'
+ };

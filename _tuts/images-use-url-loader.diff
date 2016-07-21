@@ -13,7 +13,7 @@ index c9d8c8e..2d844aa 100644
      "webpack-dev-server": "^1.14.1"
    }
 diff --git a/webpack.config.js b/webpack.config.js
-index f37bbe1..bb1b1bd 100644
+index 6b410ea..b79701d 100644
 --- a/webpack.config.js
 +++ b/webpack.config.js
 @@ -19,6 +19,10 @@ module.exports = {

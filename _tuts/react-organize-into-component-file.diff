@@ -1,0 +1,46 @@
+diff --git a/web/js/Components/ProductApp.js b/web/js/Components/ProductApp.js
+new file mode 100644
+index 0000000..35c5bad
+--- /dev/null
++++ b/web/js/Components/ProductApp.js
+@@ -0,0 +1,11 @@
++var React = require('react');
++
++var ProductApp = React.createClass({
++    render: function() {
++        return (
++            <h1>Yay!</h1>
++        )
++    }
++});
++
++module.exports = ProductApp;
+diff --git a/web/js/productApp.js b/web/js/productApp.js
+index 6af0683..6438b6a 100644
+--- a/web/js/productApp.js
++++ b/web/js/productApp.js
+@@ -1,8 +1,8 @@
+ var ProductCollection = require('./ProductCollection');
+ require('../css/productApp.css');
+-var _ = require('lodash');
+ var React = require('react');
+ var ReactDOM = require('react-dom');
++var ProductApp = require('./Components/ProductApp');
+ 
+ var collection = new ProductCollection([
+     'Sheer Shears',
+@@ -13,14 +13,6 @@ var collection = new ProductCollection([
+     'Shearly Conditioned'
+ ]);
+ 
+-var ProductApp = React.createClass({
+-    render: function() {
+-        return (
+-            <h1>Yay!</h1>
+-        )
+-    }
+-});
+-
+ $(document).ready(function() {
+     ReactDOM.render(
+         <ProductApp/>,
