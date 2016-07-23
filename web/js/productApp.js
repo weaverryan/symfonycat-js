@@ -1,4 +1,4 @@
-var ProductCollection = require('./ProductCollection');
+import ProductCollection from './ProductCollection';
 
 var collection = new ProductCollection([
     'Sheer Shears',

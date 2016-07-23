@@ -13,4 +13,4 @@ class ProductCollection
     }
 }
 
-module.exports = ProductCollection;
+export default ProductCollection;
