@@ -21,8 +21,8 @@ module.exports = {
                 loader: "style!css"
             },
             {
-                test: /\.png/,
-                loader: "url-loader?limit=10000"
+                test:   /\.(png|gif|jpe?g|svg?(\?v=[0-9]\.[0-9]\.[0-9])?)$/i,
+                loader: 'url?limit=10000',
             }
         ]
     },
