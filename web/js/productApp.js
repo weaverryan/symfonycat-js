@@ -1,5 +1,7 @@
+
 import ProductCollection from './ProductCollection';
 import '../css/productApp.css';
+import _ from 'lodash';
 
 var collection = new ProductCollection([
     'Sheer Shears',
@@ -11,9 +13,9 @@ var collection = new ProductCollection([
 ]);
 
 var loopThroughProducts = function(callback) {
-    for (let i = 0, length = collection.getProducts().length; i < length; i++) {
-        callback(collection.getProduct(i));
-    }
+    _.each(collection.getProducts(), function(product, index) {
+        callback(product);
+    });
 };
 
 $(document).ready(function() {
