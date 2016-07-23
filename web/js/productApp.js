@@ -1,5 +1,5 @@
 import ProductCollection from './ProductCollection';
-import 'style!css!../css/productApp.css';
+import '../css/productApp.css';
 
 var collection = new ProductCollection([
     'Sheer Shears',
