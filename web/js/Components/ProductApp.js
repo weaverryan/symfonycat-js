@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import ProductRow from './ProductRow';
 
 var ProductApp = React.createClass({
 
@@ -8,10 +9,7 @@ var ProductApp = React.createClass({
         var productRows = [];
         _.each(this.props.initialProducts, function(product, index) {
             productRows.push(
-                <tr key={index}>
-                    <td>{product}</td>
-                    <td className="product-price">{Math.round(Math.random()*50)}</td>
-                </tr>
+                <ProductRow product={product} key={index} />
             );
         });
 
