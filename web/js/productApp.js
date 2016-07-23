@@ -15,4 +15,13 @@ var loopThroughProducts = function(callback) {
     }
 };
 
-loopThroughProducts(product => console.log('Product: '+product));
+$(document).ready(function() {
+    var $table = $('.js-product-table tbody');
+
+    loopThroughProducts(function(product) {
+        var $tr = $('<tr></tr>');
+        $tr.append('<td>'+product+'</td>');
+        $tr.append('<td class="product-price">$'+Math.round(Math.random() * 50)+'.00</td>');
+        $table.append($tr);
+    });
+});
