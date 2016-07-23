@@ -22,5 +22,6 @@ module.exports = {
         hot: true,
         contentBase: './web/',
         headers: { "Access-Control-Allow-Origin": "*" }
-    }
+    },
+    devtool: production ? false : '#inline-source-map'
 };
