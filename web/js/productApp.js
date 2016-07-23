@@ -13,6 +13,4 @@ var loopThroughProducts = function(callback) {
     }
 };
 
-loopThroughProducts(function(product) {
-    console.log('Product: '+product);
-});
+loopThroughProducts(product => console.log('Product: '+product));
