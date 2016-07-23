@@ -1,7 +1,8 @@
-
 import ProductCollection from './ProductCollection';
 import '../css/productApp.css';
 import _ from 'lodash';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 var collection = new ProductCollection([
     'Sheer Shears',
@@ -12,19 +13,17 @@ var collection = new ProductCollection([
     'Shearly Conditioned'
 ]);
 
-var loopThroughProducts = function(callback) {
-    _.each(collection.getProducts(), function(product, index) {
-        callback(product);
-    });
-};
+var ProductApp = React.createClass({
+    render: function() {
+        return (
+            <h1>Yay!</h1>
+        )
+    }
+});
 
 $(document).ready(function() {
-    var $table = $('.js-product-table tbody');
-
-    loopThroughProducts(function(product) {
-        var $tr = $('<tr></tr>');
-        $tr.append('<td>'+product+'</td>');
-        $tr.append('<td class="product-price">$'+Math.round(Math.random() * 50)+'.00</td>');
-        $table.append($tr);
-    });
+    ReactDOM.render(
+        <ProductApp/>,
+        document.getElementById('product-app')
+    );
 });
