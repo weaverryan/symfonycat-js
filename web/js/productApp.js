@@ -15,7 +15,7 @@ var collection = new ProductCollection([
 
 $(document).ready(function() {
     ReactDOM.render(
-        <ProductApp/>,
+        <ProductApp message="Great Products!" />,
         document.getElementById('product-app')
     );
 });
