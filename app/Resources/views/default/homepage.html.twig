@@ -3,6 +3,7 @@
 {% block javascripts %}
     {{ parent() }}
 
+    <script src="{{ asset('webpack-dev-server.js') }}"></script>
     <script src="{{ asset('builds/product.js') }}"></script>
 {% endblock %}
 

@@ -15,5 +15,10 @@ module.exports = {
                 loader: "babel-loader"
             }
         ]
+    },
+    devServer: {
+        hot: true,
+        contentBase: './web/',
+        headers: { "Access-Control-Allow-Origin": "*" }
     }
 };
