@@ -12,3 +12,5 @@ class ProductCollection
         return this.products[i];
     }
 }
+
+export ProductCollection;

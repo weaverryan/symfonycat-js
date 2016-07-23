@@ -1,3 +1,5 @@
+import ProductCollection from './ProductCollection';
+
 var collection = new ProductCollection([
     'Sheer Shears',
     'Wool Hauling Basket',
