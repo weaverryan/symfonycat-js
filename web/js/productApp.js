@@ -8,7 +8,7 @@ var products = [
 ];
 
 var loopThroughProducts = function(callback) {
-    for (var i = 0, length = products.length; i < length; i++) {
+    for (let i = 0, length = products.length; i < length; i++) {
         callback(products[i]);
     }
 };
