@@ -30,8 +30,8 @@ framework:
         save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
     fragments:       ~
     http_method_override: true
-    assets:
-        base_url: http://localhost:8080
+    # base_url configured dynamically in AppKernel
+    assets: ~
 
 # Twig Configuration
 twig:
