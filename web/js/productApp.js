@@ -1,8 +1,8 @@
 import ProductCollection from './ProductCollection';
 import '../css/productApp.css';
-import _ from 'lodash';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ProductApp  from './Components/ProductApp';
 
 var collection = new ProductCollection([
     'Sheer Shears',
@@ -12,14 +12,6 @@ var collection = new ProductCollection([
     'Shear Comb',
     'Shearly Conditioned'
 ]);
-
-var ProductApp = React.createClass({
-    render: function() {
-        return (
-            <h1>Yay!</h1>
-        )
-    }
-});
 
 $(document).ready(function() {
     ReactDOM.render(
