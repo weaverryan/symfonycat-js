@@ -1,18 +1,3 @@
-class ProductCollection
-{
-    constructor(products) {
-        this.products = products;
-    }
-
-    getProducts() {
-        return this.products;
-    }
-
-    getProduct(i) {
-        return this.products[i];
-    }
-}
-
 var collection = new ProductCollection([
     'Sheer Shears',
     'Wool Hauling Basket',
