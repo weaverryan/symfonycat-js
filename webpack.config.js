@@ -1,3 +1,5 @@
+var production = process.env.NODE_ENV === 'production';
+
 module.exports = {
     entry: {
         product: './web/js/productApp.js'
@@ -5,7 +7,7 @@ module.exports = {
     output: {
         path: './web/builds',
         filename: '[name].js',
-        publicPath: '/builds/'
+        publicPath: production ? '/builds/' : 'http://localhost:8080/builds/'
     },
     module: {
         loaders: [
